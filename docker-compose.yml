@@ -1,0 +1,29 @@
+services:
+  nginx:
+    build: ./nginx/
+    ports:
+      - 8080:80
+    volumes:
+      - ./php_code/:/var/www/html/
+
+  php:
+    build: ./php_code/
+    expose:
+      - 9000
+    volumes:
+      - ./php_code/:/var/www/html/
+
+  ohters:
+    image: cristianmazzarone/ctf_others2:latest
+    ports:
+      - 2222:22
+  db:
+    image: cristianmazzarone/ctf_postgres2:latest
+    container_name: postgres_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  db_data:

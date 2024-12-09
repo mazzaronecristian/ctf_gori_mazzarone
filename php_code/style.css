@@ -1,0 +1,35 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+body {
+  background-image: url("sfondo_ctf.png");
+}
+#parolaNascosta {
+  position: absolute;
+  top: 37%;
+  left: 70%;
+  color: #e7bb8a;
+}
+.opnionboxcontainer {
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+}
+
+.opinionboxtitle {
+  margin: 0;
+  padding: 0 0 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #e7bb8a;
+}
+
+.mypagecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 800px;
+}
