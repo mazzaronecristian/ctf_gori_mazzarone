@@ -1,5 +1,5 @@
 ## Installation
-Just run docker `compose up -d` 
+Just run `docker compose up -d` 
 
 ## Hints
 If something looks a bit off, it's probably a hint.
